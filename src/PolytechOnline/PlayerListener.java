@@ -19,11 +19,9 @@ public class PlayerListener implements Listener{
 
 	public PlayerListener (JavaPlugin plugin){
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);}
+	
 	@SuppressWarnings("deprecation")
 	@EventHandler
-    
-	
-	
 	
 	public void onPlayerInteract(PlayerInteractEvent e) {
 		Player player = e.getPlayer();
@@ -399,9 +397,10 @@ public class PlayerListener implements Listener{
                      				//Location loc = new Location(world,571, 49, -734, 89, 0);
                     				//player.teleport(loc);
                     				}                        	
-                         	if(s.getLine(1).equalsIgnoreCase(ChatColor.BLACK+"choose side:"))
-                     			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"village"))
-                         	{
+                         	
+                       if(s.getLine(1).equalsIgnoreCase(ChatColor.BLACK+"choose side:"))
+                     	if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"village"))
+                     			{
                          		World world = player.getWorld();
                          		Location loc = player.getLocation();
                          		world.setSpawnLocation(571, 49, -734);
@@ -409,9 +408,11 @@ public class PlayerListener implements Listener{
                          		World world1 = player.getWorld();
                          		Location loc1 = new Location(world1, 571, 49, -734, 89, 0);
                 				player.teleport(loc1);
-                     }
-                         	if(s.getLine(1).equalsIgnoreCase(ChatColor.BLACK+"choose side:"))
-                     			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"castle"))
+                         		}
+                         	
+                       
+                       if(s.getLine(1).equalsIgnoreCase(ChatColor.BLACK+"choose side:"))
+                     		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"castle"))
                          	{
                          		World world = player.getWorld();
                          		Location loc = player.getLocation();
@@ -420,13 +421,9 @@ public class PlayerListener implements Listener{
                          		World world1 = player.getWorld();
                          		Location loc1 = new Location(world1, 571, 49, -734, 89, 0);
                 				player.teleport(loc1); }
+                       
                          	
-                         	if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"VillageTeam"))
-                     			
-                         	{
-                         			
-        
-        }
+                         	
                          		
                          	}}}
             	

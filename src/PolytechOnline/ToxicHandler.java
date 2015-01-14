@@ -30,16 +30,12 @@ public class ToxicHandler extends JavaPlugin{
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
 	    Player player = (Player) sender;
-	    //start a game//
-	   if (commandLabel.equalsIgnoreCase("start")){
-		   player.sendMessage(ChatColor.RED + "This command has not been added yet!"); }
+	   
 			
-	   if(commandLabel.equalsIgnoreCase("setteamspawn")){
-		   player.sendMessage(ChatColor.RED + "This command has not been added yet!");
-	   }
+	   //send to spawn
 	   if(commandLabel.equalsIgnoreCase("spawn")){
 		   World world = player.getWorld();
-			Location loc = new Location(world,571, 49, -734, 89, 0);
+			Location loc = new Location(world,820, 65, -748, 0, 0);
 			player.teleport(loc);}
 			
 	

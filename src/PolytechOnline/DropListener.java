@@ -2,6 +2,7 @@ package PolytechOnline;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -44,13 +45,13 @@ public class DropListener implements Listener{
 	@EventHandler
 	//Prevents player from taking off armor//
 		public  void onClick(InventoryClickEvent event){
-		        if(event.getSlotType() == InventoryType.SlotType.ARMOR){
-		         event.setCancelled(true);
+	    if(event.getSlotType() == InventoryType.SlotType.ARMOR){
+		        event.setCancelled(true);
 		         }}
-		  
+	@EventHandler	  
 		//Prevents player from dropping items on death//
-		public void onPlayerDeath(PlayerDeathEvent event){
-		        	event.getDrops().clear();}
+		public void onPlayerDeath(PlayerDeathEvent death){
+		        	death.getDrops().clear();}
 
 }
 		

@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -30,7 +31,7 @@ public class Join implements Listener{
 				World world = player.getWorld();
  				Location loc = new Location(world,820, 65, -748, 0, 0);
 				player.teleport(loc);
-				
+				world.setSpawnLocation(820, 65, -748);
 			}
 			else {
 				player.setGameMode(GameMode.CREATIVE);
@@ -41,7 +42,19 @@ public class Join implements Listener{
 			}
 			
 		}
-	
+		@EventHandler
+		public void onPlayerRespawn(PlayerRespawnEvent e){
+			Player player = e.getPlayer();
+			if (player.isOp()){
+				return;
+			}
+			if (!player.isOp()){
+				return;	
+				
+			}
+			
+			
+		}
 		
 		
 		
