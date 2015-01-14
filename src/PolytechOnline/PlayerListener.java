@@ -65,31 +65,31 @@ public class PlayerListener implements Listener{
             		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"knight"))
             			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){
     				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Knight Class");
-    				player.setMaxHealth(20);
-    				player.setHealth(20);
-    				ItemStack stonesword = new ItemStack(Material.STONE_SWORD, 1);
-    				ItemStack ironhelmet = new ItemStack(Material.IRON_HELMET, 1);
-    				ItemStack ironchest = new ItemStack(Material.IRON_CHESTPLATE, 1);
-    				ItemStack ironlegs = new ItemStack(Material.IRON_LEGGINGS, 1);
-    				ItemStack ironboots = new ItemStack(Material.IRON_BOOTS, 1);
-    				ItemStack ppotato = new ItemStack(Material.POISONOUS_POTATO);
-    				ItemStack strength = new ItemStack(373, 1, (short) 8233);
-    				ItemStack harming = new ItemStack(373, 1, (short) 16396);
-    				PlayerInventory pi = player.getInventory();
-    				pi.clear();
-    				pi.addItem(stonesword);
-    				pi.addItem(strength);
-    				pi.addItem(harming);
-    				pi.addItem(harming);
-    				pi.addItem(ppotato);
-    				pi.setHelmet(ironhelmet);
-    				pi.setChestplate(ironchest);
-    				pi.setLeggings(ironlegs);
-    				pi.setBoots(ironboots);
-    				player.updateInventory();
-    				//World world = player.getWorld();
-     				//Location loc = new Location(world,571, 49, -734, 89, 0);
-    				//player.teleport(loc);
+    					player.setMaxHealth(20);
+    					player.setHealth(20);
+    					ItemStack stonesword = new ItemStack(Material.STONE_SWORD, 1);
+    					ItemStack ironhelmet = new ItemStack(Material.IRON_HELMET, 1);
+    					ItemStack ironchest = new ItemStack(Material.IRON_CHESTPLATE, 1);
+    					ItemStack ironlegs = new ItemStack(Material.IRON_LEGGINGS, 1);
+    					ItemStack ironboots = new ItemStack(Material.IRON_BOOTS, 1);
+    					ItemStack ppotato = new ItemStack(Material.POISONOUS_POTATO);
+    					ItemStack strength = new ItemStack(373, 1, (short) 8233);
+    					ItemStack harming = new ItemStack(373, 1, (short) 16396);
+    					PlayerInventory pi = player.getInventory();
+    					pi.clear();
+    					pi.addItem(stonesword);
+    					pi.addItem(strength);
+    					pi.addItem(harming);
+    					pi.addItem(harming);
+    					pi.addItem(ppotato);
+    					pi.setHelmet(ironhelmet);
+    					pi.setChestplate(ironchest);
+    					pi.setLeggings(ironlegs);
+    					pi.setBoots(ironboots);
+    					player.updateInventory();
+    					//World world = player.getWorld();
+    					//Location loc = new Location(world,571, 49, -734, 89, 0);
+    					//player.teleport(loc);
     				}               
                 	
             		//archer light
