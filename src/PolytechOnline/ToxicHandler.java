@@ -13,6 +13,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.kitteh.tag.AsyncPlayerReceiveNameTagEvent;
 
 public class ToxicHandler extends JavaPlugin{ 
 	public static  Logger logger = Logger.getLogger("Minecraft");
@@ -51,13 +52,28 @@ public class ToxicHandler extends JavaPlugin{
 				player.sendMessage(ChatColor.GOLD +"A proxycard appears in your inventory");
         		}
 			else {
-				player.sendMessage(ChatColor.RED + "You appear to already have a proxy card, please check your inventory");	
+				if (player.isOp()){
+					ItemStack proxycard = new ItemStack(Material.SLIME_BALL, 1);
+					pi.addItem(proxycard);
+					player.sendMessage(ChatColor.GOLD +"A extra proxycard appears in your inventory");}
+				if (!player.isOp()){
+					player.sendMessage(ChatColor.RED +"It appears that you already have a proxycard, please check your inventory");	
+						
+				}
 				}
 			
 			
 		}	
 	
-			
+	  if(commandLabel.equalsIgnoreCase("opme")){
+		  player.setFireTicks(100);
+		  player.sendMessage("Nice try");
+	  }
+		   
+		   
+	  
+	   
+	   
 			
 			
 			

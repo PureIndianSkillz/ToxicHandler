@@ -44,7 +44,12 @@ public class DropListener implements Listener{
 	//Prevents player from taking off armor//
 		public  void onClick(InventoryClickEvent event){
 	    if (event.getSlotType() == InventoryType.SlotType.ARMOR){
-		        event.setCancelled(true);}
+		     Player player = (Player) event.getWhoClicked();
+		     if (!player.isOp()){ 
+		    	 
+		    event.setCancelled(true);
+		     }
+	    }
 	    		}
 	@EventHandler	  
 		//Prevents player from dropping items on death//

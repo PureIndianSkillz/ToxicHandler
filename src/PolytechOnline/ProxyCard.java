@@ -16,6 +16,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.kitteh.tag.AsyncPlayerReceiveNameTagEvent;
 
 public class ProxyCard implements Listener{
 	public ProxyCard (JavaPlugin plugin){

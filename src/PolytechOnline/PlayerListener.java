@@ -31,8 +31,8 @@ public class PlayerListener implements Listener{
             
             
             		//knight light
-            		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"knight"));
-            			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light"));{
+            		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"knight"))
+            			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){
     				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Knight Class");
     				player.setMaxHealth(12);
     				player.setHealth(12);

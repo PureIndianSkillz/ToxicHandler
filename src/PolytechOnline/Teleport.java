@@ -46,10 +46,15 @@ public class Teleport implements Listener{
 				bl.setDisplayName("Builders Monument");
 				blue.setItemMeta(bl);
 				
+				ItemStack green = new ItemStack(Material.WOOL, 1, DyeColor.GREEN.getData());
+				ItemMeta gr = green.getItemMeta();
+				gr.setDisplayName("MLG Jumping Puzzle");
+				green.setItemMeta(gr);
 				
 				inv.addItem(wool);
 				inv.addItem(black);
 				inv.addItem(blue);
+				inv.addItem(green);
 				e.getPlayer().openInventory(inv);
 				
 				Player player = e.getPlayer();
@@ -90,9 +95,16 @@ public class Teleport implements Listener{
 		
 		if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Op only Toxic Havoc Tp")){
 			World world = p.getWorld();
-			Location loc = new Location(world,481, 98, -935, 180, 0);
+			Location loc = new Location(world,411, 134, 61, 190, 0);
 			p.teleport(loc);
 			p.sendMessage("You were teleported to the Toxic Havoc Map");}
+		
+		if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("MLG Jumping Puzzle")){
+			World world = p.getWorld();
+			Location loc = new Location(world,427, 49, -739, 90, 0);
+			p.teleport(loc);
+			p.sendMessage("You were teleported to the MLG jumping puzzle");}
+		
 			}//inventory click
 	
 

@@ -12,3 +12,9 @@ commands:
   opme:
     description: ignite a player
     usage: /opme
+  proxycard:
+    description: gives a player a proxycard
+    usage: /proxycard
+  cellamare:
+    description:
+    usage: /cellamare
