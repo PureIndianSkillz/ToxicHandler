@@ -29,7 +29,7 @@ public class ToxicHandler extends JavaPlugin{
 		new PolytechOnline.Join(this);
 		PluginDescriptionFile pdfFile = this.getDescription();
 		ToxicHandler.logger.info(pdfFile.getName() + " Version" + pdfFile.getVersion() + " Toxic Havoc Development Build Has Been Enabled");
-	}
+		}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
 	    Player player = (Player) sender;
@@ -39,17 +39,20 @@ public class ToxicHandler extends JavaPlugin{
 	   if(commandLabel.equalsIgnoreCase("spawn")){
 		   World world = player.getWorld();
 			Location loc = new Location(world,820, 65, -748, 0, 0);
-			player.teleport(loc);}
-		if(commandLabel.equalsIgnoreCase("proxycard")){
+			player.teleport(loc);
+			}
+		
+	   //Give player a proxy card
+	   if(commandLabel.equalsIgnoreCase("proxycard")){
 			PlayerInventory pi = player.getInventory();
-			if(!player.getInventory().contains(Material.SLIME_BALL)){
+			if (!player.getInventory().contains(Material.SLIME_BALL)){
 				ItemStack proxycard = new ItemStack(Material.SLIME_BALL, 1);
 				pi.addItem(proxycard);
 				player.sendMessage(ChatColor.GOLD +"A proxycard appears in your inventory");
         		}
 			else {
 				player.sendMessage(ChatColor.RED + "You appear to already have a proxy card, please check your inventory");	
-			}
+				}
 			
 			
 		}	
@@ -64,6 +67,9 @@ public class ToxicHandler extends JavaPlugin{
 			
 			
 			
+		
+		
+		
 			
 			
 			return true;}

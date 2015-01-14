@@ -24,30 +24,16 @@ public class ProxyCard implements Listener{
 	@EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         if (event.getAction().equals(Action.PHYSICAL));
-        Player player = event.getPlayer();
-        {
+        Player player = event.getPlayer();{
             if (event.getClickedBlock().getType().equals(Material.STONE_PLATE)){
             if(player.getInventory().contains(Material.SLIME_BALL)){
             		event.setCancelled(false);
-            		}
-            	
-            	else {
-            		event.setCancelled(true);
-            		
-            			
             		}	
-            		}
-            	
-            	
-            	}	
-            	
-                  
-            	
-            }
-	
-	
-       
-
-
-
-}
+            else {
+            		event.setCancelled(true);
+            		}	
+            		
+            }//equals stone plate
+            }//get player	
+            }//player interact
+			}//end
