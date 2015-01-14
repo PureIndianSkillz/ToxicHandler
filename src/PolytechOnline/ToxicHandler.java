@@ -4,10 +4,13 @@ import java.util.logging.Logger;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -37,7 +40,19 @@ public class ToxicHandler extends JavaPlugin{
 		   World world = player.getWorld();
 			Location loc = new Location(world,820, 65, -748, 0, 0);
 			player.teleport(loc);}
+		if(commandLabel.equalsIgnoreCase("proxycard")){
+			PlayerInventory pi = player.getInventory();
+			if(!player.getInventory().contains(Material.SLIME_BALL)){
+				ItemStack proxycard = new ItemStack(Material.SLIME_BALL, 1);
+				pi.addItem(proxycard);
+				player.sendMessage(ChatColor.GOLD +"A proxycard appears in your inventory");
+        		}
+			else {
+				player.sendMessage(ChatColor.RED + "You appear to already have a proxy card, please check your inventory");	
+			}
 			
+			
+		}	
 	
 			
 			
