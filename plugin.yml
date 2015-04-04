@@ -18,3 +18,6 @@ commands:
   cellamare:
     description:
     usage: /cellamare
+  lightning:
+    description:
+    usage: /lightning 

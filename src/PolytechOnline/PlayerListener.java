@@ -56,9 +56,9 @@ public class PlayerListener implements Listener{
     				pi.setLeggings(ironlegs);
     				pi.setBoots(ironboots);
     				player.updateInventory();
-    				//World world = player.getWorld();
-     				//Location loc = new Location(world,571, 49, -734, 89, 0);
-    				//player.teleport(loc);
+    				World world = player.getWorld();
+     				Location loc = new Location(world,534, 69, -87, 180, 0);
+    				player.teleport(loc);
     				}
             		
             		//knight heavy	
@@ -87,9 +87,9 @@ public class PlayerListener implements Listener{
     					pi.setLeggings(ironlegs);
     					pi.setBoots(ironboots);
     					player.updateInventory();
-    					//World world = player.getWorld();
-    					//Location loc = new Location(world,571, 49, -734, 89, 0);
-    					//player.teleport(loc);
+    					World world = player.getWorld();
+    					Location loc = new Location(world,534, 69, -87, 180, 0);
+    					player.teleport(loc);
     				}               
                 	
             		//archer light
@@ -119,9 +119,9 @@ public class PlayerListener implements Listener{
         				pi.setLeggings(chainlegs);
         				pi.setBoots(chainboots);
         				player.updateInventory();
-        				//World world = player.getWorld();
-         				//Location loc = new Location(world,571, 49, -734, 89, 0);
-        				//player.teleport(loc);
+        				World world = player.getWorld();
+        				Location loc = new Location(world,534, 69, -87, 180, 0);
+        				player.teleport(loc);
         				}
             		
             		//archer heavy
@@ -151,9 +151,9 @@ public class PlayerListener implements Listener{
         					pi.setLeggings(chainlegs);
         					pi.setBoots(chainboots);
         					player.updateInventory();
-        					//World world = player.getWorld();
-        					//Location loc = new Location(world,571, 49, -734, 89, 0);
-        					//player.teleport(loc);
+        					World world = player.getWorld();
+        					Location loc = new Location(world,534, 69, -87, 180, 0);
+        					player.teleport(loc);
         				}
                 	
             		//wizard light
@@ -183,9 +183,9 @@ public class PlayerListener implements Listener{
             				pi.setLeggings(leatherlegs);
             				pi.setBoots(leatherboots);
             				player.updateInventory();
-            				//World world = player.getWorld();
-             				//Location loc = new Location(world,571, 49, -734, 89, 0);
-            				//player.teleport(loc);
+            				World world = player.getWorld();
+            				Location loc = new Location(world,534, 69, -87, 180, 0);
+            				player.teleport(loc);
             				}
                 	
                 	//wizard heavy
@@ -215,9 +215,9 @@ public class PlayerListener implements Listener{
             					pi.setLeggings(leatherlegs);
             					pi.setBoots(leatherboots);
             					player.updateInventory();
-            					//World world = player.getWorld();
-            					//Location loc = new Location(world,571, 49, -734, 89, 0);
-            					//player.teleport(loc);
+            					World world = player.getWorld();
+            					Location loc = new Location(world,534, 69, -87, 180, 0);
+            					player.teleport(loc);
             					}
                 	
                 	 //farmer light
@@ -246,9 +246,9 @@ public class PlayerListener implements Listener{
              					pi.setLeggings(ironlegs);
              					pi.setBoots(ironboots);
              					player.updateInventory();
-             					//World world = player.getWorld();
-             					//Location loc = new Location(world,571, 49, -734, 89, 0);
-             					//player.teleport(loc);
+             					World world = player.getWorld();
+             					Location loc = new Location(world,276, 74, -137, 180, 0);
+             					player.teleport(loc);
              					}
                 	
                 	 //farmer heavy
@@ -277,9 +277,9 @@ public class PlayerListener implements Listener{
               					pi.setLeggings(ironlegs);
               					pi.setBoots(ironboots);
               					player.updateInventory();
-              					//World world = player.getWorld();
-              					//Location loc = new Location(world,571, 49, -734, 89, 0);
-              					//player.teleport(loc);
+              					World world = player.getWorld();
+              					Location loc = new Location(world,276, 74, -137, 180, 0);
+              					player.teleport(loc);
              					}   	
                      
                 	 //bowman light
@@ -309,9 +309,9 @@ public class PlayerListener implements Listener{
                  				pi.setLeggings(chainlegs);
                  				pi.setBoots(chainboots);
                  				player.updateInventory();
-                 				//World world = player.getWorld();
-                 				//Location loc = new Location(world,571, 49, -734, 89, 0);
-                				//player.teleport(loc);
+                 				World world = player.getWorld();
+                 				Location loc = new Location(world,276, 74, -137, 180, 0);
+                				player.teleport(loc);
                 				}
                     
                      //bowman heavy
@@ -341,9 +341,9 @@ public class PlayerListener implements Listener{
                   				pi.setLeggings(chainlegs);
                   				pi.setBoots(chainboots);
                   				player.updateInventory();
-                  				//World world = player.getWorld();
-                  				//Location loc = new Location(world,571, 49, -734, 89, 0);
-                 				//player.teleport(loc);
+                  				World world = player.getWorld();
+                  				Location loc = new Location(world,276, 74, -137, 180, 0);
+                 				player.teleport(loc);
                  				}
                        
                        //alchemist light	
@@ -373,9 +373,9 @@ public class PlayerListener implements Listener{
                    				pi.setLeggings(leatherlegs);
                    				pi.setBoots(leatherboots);
                    				player.updateInventory();
-                   				//World world = player.getWorld();
-                   				//Location loc = new Location(world,571, 49, -734, 89, 0);
-                  				//player.teleport(loc);
+                   				World world = player.getWorld();
+                   				Location loc = new Location(world,276, 74, -137, 180, 0);
+                  				player.teleport(loc);
                     			} 
                       
                        //alchemist heavy
@@ -405,9 +405,9 @@ public class PlayerListener implements Listener{
                    				pi.setLeggings(leatherlegs);
                    				pi.setBoots(leatherboots);
                    				player.updateInventory();
-                   				//World world = player.getWorld();
-                   				//Location loc = new Location(world,571, 49, -734, 89, 0);
-                  				//player.teleport(loc);
+                   				World world = player.getWorld();
+                   				Location loc = new Location(world,276, 74, -137, 180, 0);
+                  				player.teleport(loc);
                     			}                        	
                        
                        //side village

@@ -19,6 +19,8 @@ public class DropListener implements Listener{
 	@EventHandler	
 	//Prevents player from throwing weapons//
 	public void onPlayerDropItem(PlayerDropItemEvent event) {
+		Player player = event.getPlayer();
+		if (!player.isOp()){
 		if(event.getItemDrop().getItemStack().getType() == Material.BOWL){
 			event.setCancelled(true);
 			event.getPlayer().sendMessage(ChatColor.DARK_PURPLE + "You attempt to drop the item. But it flies back into your hand!");}
@@ -37,8 +39,8 @@ public class DropListener implements Listener{
 		if(event.getItemDrop().getItemStack().getType() == Material.STICK){
 			event.setCancelled(true); 
 			event.getPlayer().sendMessage(ChatColor.DARK_PURPLE + "You attempt to drop the item. But it flies back into your hand!");}
-			}//player drop event
-	
+			}
+	}//player drop event
 
 	@EventHandler
 	//Prevents player from taking off armor//

@@ -1,5 +1,6 @@
 package PolytechOnline;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
@@ -36,26 +37,13 @@ public class Join implements Listener{
 			else {
 				player.setGameMode(GameMode.CREATIVE);
 				player.sendMessage(ChatColor.GOLD + "Welcome back team Dinosausage member. Your gamemode has been set to creative for you");
-				
+				Bukkit.broadcastMessage(ChatColor.GOLD+"Op " + ChatColor.BLUE + player.getDisplayName() + ChatColor.GOLD +" has joined the game" );
 				
 				
 			}
 			
 		}
-		@EventHandler
-		public void onPlayerRespawn(PlayerRespawnEvent e){
-			Player player = e.getPlayer();
-			if (player.isOp()){
-				return;
-			}
-			if (!player.isOp()){
-				return;	
-				
-			}
-			
-			
-		}
-		
+	
 		
 		
 		

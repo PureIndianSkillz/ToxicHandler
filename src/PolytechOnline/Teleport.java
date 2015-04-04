@@ -67,6 +67,19 @@ public class Teleport implements Listener{
 				}
 				player.updateInventory();
 				}//slimeball
+		
+			if(e.getMaterial()==Material.GOLD_NUGGET){
+				Inventory inv = Bukkit.createInventory(null, 9, "§9Benis Teleporter");
+			
+				ItemStack wool = new ItemStack(Material.WOOL, 1);
+				ItemMeta meta = wool.getItemMeta();
+				meta.setDisplayName("Benis Lounge");
+				wool.setItemMeta(meta);
+			
+				inv.addItem(wool);
+				e.getPlayer().openInventory(inv);
+				}//gold nugget	
+				
 				}//rightclick
 				}//player interact
 
@@ -93,17 +106,24 @@ public class Teleport implements Listener{
 			p.teleport(loc);
 			p.sendMessage("You were teleported to the Builders Monument");}
 		
+		if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("MLG Jumping Puzzle")){
+			World world = p.getWorld();
+			Location loc = new Location(world,427, 49, -739, 90, 0);
+			p.teleport(loc);
+			p.sendMessage("You were teleported to the MLG jumping puzzle");}
+		
 		if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Op only Toxic Havoc Tp")){
 			World world = p.getWorld();
 			Location loc = new Location(world,411, 134, 61, 190, 0);
 			p.teleport(loc);
 			p.sendMessage("You were teleported to the Toxic Havoc Map");}
 		
-		if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("MLG Jumping Puzzle")){
+		if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("Benis Lounge")){
 			World world = p.getWorld();
-			Location loc = new Location(world,427, 49, -739, 90, 0);
+			Location loc = new Location(world,515, 49, -912, 180, 0);
 			p.teleport(loc);
-			p.sendMessage("You were teleported to the MLG jumping puzzle");}
+			p.sendMessage("You were teleported to the Benis Lounge");}
+		
 		
 			}//inventory click
 	
@@ -148,4 +168,4 @@ public class Teleport implements Listener{
 
 
 
-}
+}//end

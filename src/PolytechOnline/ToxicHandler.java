@@ -6,6 +6,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -13,7 +14,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.kitteh.tag.AsyncPlayerReceiveNameTagEvent;
+
 
 public class ToxicHandler extends JavaPlugin{ 
 	public static  Logger logger = Logger.getLogger("Minecraft");
@@ -28,6 +29,7 @@ public class ToxicHandler extends JavaPlugin{
 		new PolytechOnline.ProxyCard(this);
 		new PolytechOnline.Teleport(this);
 		new PolytechOnline.Join(this);
+		new PolytechOnline.Gamemode(this);
 		PluginDescriptionFile pdfFile = this.getDescription();
 		ToxicHandler.logger.info(pdfFile.getName() + " Version" + pdfFile.getVersion() + " Toxic Havoc Development Build Has Been Enabled");
 		}
@@ -69,7 +71,17 @@ public class ToxicHandler extends JavaPlugin{
 		  player.setFireTicks(100);
 		  player.sendMessage("Nice try");
 	  }
-		   
+		if(commandLabel.equalsIgnoreCase("lighting")){
+			Block targetblock = player.getTargetBlock(null, 50);
+			Location loc = targetblock.getLocation();
+			World world = player.getWorld();
+			world.strikeLightning(loc);
+			
+			
+			
+			
+			
+		}   
 		   
 	  
 	   
