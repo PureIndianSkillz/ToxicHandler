@@ -53,10 +53,12 @@ public class DropListener implements Listener{
 		     }
 	    }
 	    		}
+	
 	@EventHandler	  
 		//Prevents player from dropping items on death//
 		public void onPlayerDeath(PlayerDeathEvent death){
-		        	death.getDrops().clear();}
+		        	death.getDrops().clear();
+		     }
 
 }
 		

@@ -84,10 +84,25 @@ public class ToxicHandler extends JavaPlugin{
 		}   
 		   
 	  
-	   
+		if(commandLabel.equalsIgnoreCase("white")){
+			  if (player.isOp()){
+				  World world = player.getWorld();
+     				Location loc = new Location(world,-6, 50, -72, 0, 0);
+					player.teleport(loc);
+				  
+			  }
+		  }
 	   
 			
-			
+		if(commandLabel.equalsIgnoreCase("black")){
+			  if (player.isOp()){
+				  World world = player.getWorld();
+				  Location loc = new Location(world,-16, 50, -236, 180, 0);
+					player.teleport(loc);
+				  
+			  }
+		  }
+	   
 			
 			
 			

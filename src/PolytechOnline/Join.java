@@ -5,15 +5,19 @@ import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.Vector;
 
 public class Join implements Listener{
 
@@ -38,12 +42,27 @@ public class Join implements Listener{
 				player.setGameMode(GameMode.CREATIVE);
 				player.sendMessage(ChatColor.GOLD + "Welcome back team Dinosausage member. Your gamemode has been set to creative for you");
 				Bukkit.broadcastMessage(ChatColor.GOLD+"Op " + ChatColor.BLUE + player.getDisplayName() + ChatColor.GOLD +" has joined the game" );
-				
-				
+				Location loc = player.getLocation();
+				player.playSound(loc, Sound.BLAZE_DEATH, 1, 0);
 			}
 			
 		}
-	
+		@EventHandler
+		public void onInteract(PlayerInteractEvent e){
+			if(e.getAction() == Action.RIGHT_CLICK_AIR | e.getAction() == Action.RIGHT_CLICK_BLOCK){
+				
+				if(e.getMaterial()==Material.IRON_AXE){
+					Player player = e.getPlayer();
+					player.setVelocity(new Vector(player.getVelocity().getX(), 1, 
+							player.getVelocity().getZ()));
+					player.setVelocity(new Vector(player.getLocation().getDirection().getX(), 1, 
+							player.getVelocity().getZ()));
+                    player.getItemInHand().setDurability((short) (player.getItemInHand().getDurability()- Short.valueOf((short) -10)));
+                    player.updateInventory();	
+					
+				
+				}
+				}
 		
 		
 		
@@ -51,4 +70,31 @@ public class Join implements Listener{
 	
 	
 	}
+		
+	@EventHandler
+	public void onClick(PlayerInteractEvent event){
+		if(event.getMaterial()==Material.GOLD_SWORD){
+			event.getPlayer().getWorld().strikeLightning(event.getPlayer().getTargetBlock(null, 50).getLocation());
+			Player player = event.getPlayer();
+			player.getInventory().removeItem(player.getInventory().getItemInHand());
+			player.updateInventory();
+		}
+		
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
 

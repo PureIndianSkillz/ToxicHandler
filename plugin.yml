@@ -1,6 +1,6 @@
 name: ToxicHandler
 main: PolytechOnline.ToxicHandler
-version: 1.1
+version: 1.2
 description: none
 commands:
   spawn:
@@ -20,4 +20,10 @@ commands:
     usage: /cellamare
   lightning:
     description:
-    usage: /lightning 
+    usage: /lightning
+  white:
+    description:
+    usage: /white
+  black:
+    description:
+    usage: /black

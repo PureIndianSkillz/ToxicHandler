@@ -29,11 +29,11 @@ public class PlayerListener implements Listener{
         if (e.getClickedBlock().getState() instanceof Sign) {
             Sign s = (Sign) e.getClickedBlock().getState();
             
-            
-            		//knight light
-            		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"knight"))
-            			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){
-    				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Knight Class");
+                     //village 
+            		//village enforcer light
+            		if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"enforcer"))
+            			if (s.getLine(2).equalsIgnoreCase(ChatColor.RED+"light")){
+    				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Enforcer Class");
     				player.setMaxHealth(12);
     				player.setHealth(12);
     				ItemStack stonesword = new ItemStack(Material.STONE_SWORD, 1);
@@ -57,14 +57,16 @@ public class PlayerListener implements Listener{
     				pi.setBoots(ironboots);
     				player.updateInventory();
     				World world = player.getWorld();
-     				Location loc = new Location(world,534, 69, -87, 180, 0);
-    				player.teleport(loc);
+ 					Location loc = new Location(world,-16, 50, -236, 180, 0);
+ 					player.teleport(loc);
+ 					player.sendMessage("You were teleported to the main bridge.");
+    				
     				}
             		
-            		//knight heavy	
-            		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"knight"))
-            			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){
-    				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Knight Class");
+            		//village enforcer heavy	
+            		if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"enforcer"))
+            			if (s.getLine(2).equalsIgnoreCase(ChatColor.RED+"heavy")){
+    				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Enforcer Class");
     					player.setMaxHealth(20);
     					player.setHealth(20);
     					ItemStack stonesword = new ItemStack(Material.STONE_SWORD, 1);
@@ -88,14 +90,16 @@ public class PlayerListener implements Listener{
     					pi.setBoots(ironboots);
     					player.updateInventory();
     					World world = player.getWorld();
-    					Location loc = new Location(world,534, 69, -87, 180, 0);
-    					player.teleport(loc);
+    					Location loc = new Location(world,-16, 50, -236, 180, 0);
+     					player.teleport(loc);
+     					player.sendMessage("You were teleported to the main bridge.");
+    					
     				}               
                 	
-            		//archer light
-            		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"archer"))
-                		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){
-        				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Archer Class");
+            		//village ranger light
+            		if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"ranger"))
+                		if (s.getLine(2).equalsIgnoreCase(ChatColor.RED+"light")){
+        				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Ranger Class");
         				player.setMaxHealth(12);
         				player.setHealth(12);
         				ItemStack wood = new ItemStack(Material.WOOD_SWORD, 1);
@@ -120,14 +124,16 @@ public class PlayerListener implements Listener{
         				pi.setBoots(chainboots);
         				player.updateInventory();
         				World world = player.getWorld();
-        				Location loc = new Location(world,534, 69, -87, 180, 0);
-        				player.teleport(loc);
+        				Location loc = new Location(world,-16, 50, -236, 180, 0);
+     					player.teleport(loc);
+     					player.sendMessage("You were teleported to the main bridge.");
+        				
         				}
             		
-            		//archer heavy
-            		if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"archer"))
-                		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){
-        				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Archer Class");
+            		//village ranger heavy
+            		if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"ranger"))
+                		if (s.getLine(2).equalsIgnoreCase(ChatColor.RED+"heavy")){
+        				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Ranger Class");
         					player.setMaxHealth(20);
         					player.setHealth(20);
         					ItemStack wood = new ItemStack(Material.WOOD_SWORD, 1);
@@ -152,14 +158,16 @@ public class PlayerListener implements Listener{
         					pi.setBoots(chainboots);
         					player.updateInventory();
         					World world = player.getWorld();
-        					Location loc = new Location(world,534, 69, -87, 180, 0);
-        					player.teleport(loc);
+        					Location loc = new Location(world,-16, 50, -236, 180, 0);
+         					player.teleport(loc);
+         					player.sendMessage("You were teleported to the main bridge.");
+        				
         				}
                 	
-            		//wizard light
-                	if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"Wizard"))
-            			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){            				
-            				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Wizard Class");
+            		//village chemist light
+                	if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"Chemist"))
+            			if (s.getLine(2).equalsIgnoreCase(ChatColor.RED+"light")){            				
+            				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Chemist Class");
             				player.setMaxHealth(12);
             				player.setHealth(12);
             				ItemStack leatherhelmet = new ItemStack(Material.LEATHER_HELMET, 1);
@@ -184,14 +192,16 @@ public class PlayerListener implements Listener{
             				pi.setBoots(leatherboots);
             				player.updateInventory();
             				World world = player.getWorld();
-            				Location loc = new Location(world,534, 69, -87, 180, 0);
-            				player.teleport(loc);
+            				Location loc = new Location(world,-16, 50, -236, 180, 0);
+         					player.teleport(loc);
+         					player.sendMessage("You were teleported to the main bridge.");
+            	
             				}
                 	
-                	//wizard heavy
-                	if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"Wizard"))
-            			if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){            				
-            					e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Wizard Class");
+                	//village chemist heavy
+                	if(s.getLine(1).equalsIgnoreCase(ChatColor.RED+"Chemist"))
+            			if (s.getLine(2).equalsIgnoreCase(ChatColor.RED+"heavy")){            				
+            					e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Chemist Class");
             					player.setMaxHealth(20);
             					player.setHealth(20);
             					ItemStack leatherhelmet = new ItemStack(Material.LEATHER_HELMET, 1);
@@ -216,14 +226,17 @@ public class PlayerListener implements Listener{
             					pi.setBoots(leatherboots);
             					player.updateInventory();
             					World world = player.getWorld();
-            					Location loc = new Location(world,534, 69, -87, 180, 0);
-            					player.teleport(loc);
+            					Location loc = new Location(world,-16, 50, -236, 180, 0);
+             					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+            					
             					}
                 	
-                	 //farmer light
-                	 if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"farmer"))
-                 		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){
-             					e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Farmer Class");
+                	//castle
+                	 //castle enforcer light	
+                	 if(s.getLine(1).equalsIgnoreCase(ChatColor.BLUE+"enforcer"))
+                 		if (s.getLine(2).equalsIgnoreCase(ChatColor.BLUE+"light")){
+             					e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Enforcer Class");
              					player.setMaxHealth(12);
              					player.setHealth(12);
              					ItemStack stonesword = new ItemStack(Material.STONE_SWORD, 1);
@@ -247,14 +260,16 @@ public class PlayerListener implements Listener{
              					pi.setBoots(ironboots);
              					player.updateInventory();
              					World world = player.getWorld();
-             					Location loc = new Location(world,276, 74, -137, 180, 0);
+             					Location loc = new Location(world,-6, 50, -72, 0, 0);
              					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+             					
              					}
                 	
-                	 //farmer heavy
-                	 if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"farmer"))
-                  		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){
-              					e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Farmer Class");
+                	 //castle enforcer heavy
+                	 if(s.getLine(1).equalsIgnoreCase(ChatColor.BLUE+"enforcer"))
+                  		if (s.getLine(2).equalsIgnoreCase(ChatColor.BLUE+"heavy")){
+              					e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Enforcer Class");
               					player.setMaxHealth(20);
               					player.setHealth(20);
               					ItemStack stonesword = new ItemStack(Material.STONE_SWORD, 1);            				
@@ -278,14 +293,16 @@ public class PlayerListener implements Listener{
               					pi.setBoots(ironboots);
               					player.updateInventory();
               					World world = player.getWorld();
-              					Location loc = new Location(world,276, 74, -137, 180, 0);
-              					player.teleport(loc);
+              					Location loc = new Location(world,-6, 50, -72, 0, 0);
+             					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+              				
              					}   	
                      
-                	 //bowman light
-                     if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"bowman"))
-                 		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){                				
-                 				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Bowman Class");
+                	 //castle ranger light
+                     if(s.getLine(1).equalsIgnoreCase(ChatColor.BLUE+"ranger"))
+                 		if (s.getLine(2).equalsIgnoreCase(ChatColor.BLUE+"light")){                				
+                 				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Ranger Class");
                  				player.setMaxHealth(12);
                 				player.setHealth(12);
                  				ItemStack wood = new ItemStack(Material.WOOD_SWORD, 1);
@@ -310,14 +327,16 @@ public class PlayerListener implements Listener{
                  				pi.setBoots(chainboots);
                  				player.updateInventory();
                  				World world = player.getWorld();
-                 				Location loc = new Location(world,276, 74, -137, 180, 0);
-                				player.teleport(loc);
+                 				Location loc = new Location(world,-6, 50, -72, 0, 0);
+             					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+                 	
                 				}
                     
-                     //bowman heavy
-                     if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"bowman"))
-                  		if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){                				
-                  				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Bowman Class");
+                     //castle ranger heavy
+                     if(s.getLine(1).equalsIgnoreCase(ChatColor.BLUE+"ranger"))
+                  		if (s.getLine(2).equalsIgnoreCase(ChatColor.BLUE+"heavy")){                				
+                  				e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Ranger Class");
                   				player.setMaxHealth(20);
                 				player.setHealth(20);
                   				ItemStack wood = new ItemStack(Material.WOOD_SWORD, 1);
@@ -342,14 +361,16 @@ public class PlayerListener implements Listener{
                   				pi.setBoots(chainboots);
                   				player.updateInventory();
                   				World world = player.getWorld();
-                  				Location loc = new Location(world,276, 74, -137, 180, 0);
-                 				player.teleport(loc);
+                  				Location loc = new Location(world,-6, 50, -72, 0, 0);
+             					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+                  				
                  				}
                        
-                       //alchemist light	
-                       if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"alchemist"))
-                    	   if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"light")){                     				
-                     			e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Alchemist Class");
+                       //castle chemist light	
+                       if(s.getLine(1).equalsIgnoreCase(ChatColor.BLUE+"chemist"))
+                    	   if (s.getLine(2).equalsIgnoreCase(ChatColor.BLUE+"light")){                     				
+                     			e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Chemist Class");
                      			player.setMaxHealth(12);
                     			player.setHealth(12);
                      			ItemStack leatherhelmet = new ItemStack(Material.LEATHER_HELMET, 1);
@@ -374,14 +395,16 @@ public class PlayerListener implements Listener{
                    				pi.setBoots(leatherboots);
                    				player.updateInventory();
                    				World world = player.getWorld();
-                   				Location loc = new Location(world,276, 74, -137, 180, 0);
-                  				player.teleport(loc);
+                   				Location loc = new Location(world,-6, 50, -72, 0, 0);
+             					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+                   	
                     			} 
                       
-                       //alchemist heavy
-                       if(s.getLine(1).equalsIgnoreCase(ChatColor.DARK_RED+"alchemist"))
-                    	   if (s.getLine(2).equalsIgnoreCase(ChatColor.DARK_RED+"heavy")){                     				
-                     			e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Alchemist Class");
+                       //castle chemist heavy
+                       if(s.getLine(1).equalsIgnoreCase(ChatColor.BLUE+"chemist"))
+                    	   if (s.getLine(2).equalsIgnoreCase(ChatColor.BLUE+"heavy")){                     				
+                     			e.getPlayer().sendMessage(ChatColor.RED+"You have chosen the Chemist Class");
                      			player.setMaxHealth(20);
                     			player.setHealth(20);
                      			ItemStack leatherhelmet = new ItemStack(Material.LEATHER_HELMET, 1);
@@ -406,8 +429,10 @@ public class PlayerListener implements Listener{
                    				pi.setBoots(leatherboots);
                    				player.updateInventory();
                    				World world = player.getWorld();
-                   				Location loc = new Location(world,276, 74, -137, 180, 0);
-                  				player.teleport(loc);
+                   				Location loc = new Location(world,-6, 50, -72, 0, 0);
+             					player.teleport(loc);
+             					player.sendMessage("You were teleported to the main bridge.");
+                   			
                     			}                        	
                        
                        //side village

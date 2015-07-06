@@ -17,65 +17,80 @@ public class SignListener implements Listener{
 	{
 		Player player = sign.getPlayer();
 		
-		//knight
-		if(sign.getLine(1).equalsIgnoreCase("knightl")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Knight-Light");
-			sign.setLine(1, (ChatColor.DARK_RED+"Knight"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Light"));}
-		if(sign.getLine(1).equalsIgnoreCase("knighth")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Knight-Heavy");
-			sign.setLine(1, (ChatColor.DARK_RED+"Knight"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Heavy"));}
+		//village classes
+		//village enforcer
+		if(sign.getLine(1).equalsIgnoreCase("enforcerl")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Enforcer-Light");
+			sign.setLine(1, (ChatColor.RED+"Enforcer"));
+			sign.setLine(2, (ChatColor.RED+"Light"));}
+		if(sign.getLine(1).equalsIgnoreCase("enforcerh")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Enforcer-Heavy");
+			sign.setLine(1, (ChatColor.RED+"Enforcer"));
+			sign.setLine(2, (ChatColor.RED+"Heavy"));}
 		
-		//archer
-		if(sign.getLine(1).equalsIgnoreCase("archerl")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Archer-Light");
-			sign.setLine(1, (ChatColor.DARK_RED+"Archer"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Light"));}
-		if(sign.getLine(1).equalsIgnoreCase("archerh")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Archer-Heavy");
-			sign.setLine(1, (ChatColor.DARK_RED+"Archer"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Heavy"));}
+		//village ranger
+		if(sign.getLine(1).equalsIgnoreCase("Rangerl")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Ranger-Light");
+			sign.setLine(1, (ChatColor.RED+"Ranger"));
+			sign.setLine(2, (ChatColor.RED+"Light"));}
+		if(sign.getLine(1).equalsIgnoreCase("rangerh")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Ranger-Heavy");
+			sign.setLine(1, (ChatColor.RED+"Ranger"));
+			sign.setLine(2, (ChatColor.RED+"Heavy"));}
 		
-		//wizard
-		if(sign.getLine(1).equalsIgnoreCase("wizardl")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Wizard-Light");
-			sign.setLine(1, (ChatColor.DARK_RED+"Wizard"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Light"));}
-		if(sign.getLine(1).equalsIgnoreCase("wizardh")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Wizard-Heavy");
-			sign.setLine(1, (ChatColor.DARK_RED+"Wizard"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Heavy"));}
+		//village chemist
+		if(sign.getLine(1).equalsIgnoreCase("Chemistl")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Chemist-Light");
+			sign.setLine(1, (ChatColor.RED+"Chemist"));
+			sign.setLine(2, (ChatColor.RED+"Light"));}
+		if(sign.getLine(1).equalsIgnoreCase("chemisth")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Chemist-Heavy");
+			sign.setLine(1, (ChatColor.RED+"Chemist"));
+			sign.setLine(2, (ChatColor.RED+"Heavy"));}
 		
-		//farmer	
-		if(sign.getLine(1).equalsIgnoreCase("farmerl")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Farmer-Light");
-			sign.setLine(1, (ChatColor.DARK_RED+"Farmer"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Light"));}
-		if(sign.getLine(1).equalsIgnoreCase("farmerh")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Farmer-Heavy");
-			sign.setLine(1, (ChatColor.DARK_RED+"Farmer"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Heavy"));}
 		
-		//bowman
-		if(sign.getLine(1).equalsIgnoreCase("bowmanl")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Bowman-Light");
-			sign.setLine(1, (ChatColor.DARK_RED+"Bowman"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Light"));}
-		if(sign.getLine(1).equalsIgnoreCase("bowmanh")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Bowman-Heavy");
-			sign.setLine(1, (ChatColor.DARK_RED+"Bowman"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Heavy"));}
 		
-		//alchemist
-		if(sign.getLine(1).equalsIgnoreCase("alchemistl")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Alchemist-Light");
-			sign.setLine(1, (ChatColor.DARK_RED+"Alchemist"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Light"));}
-		if(sign.getLine(1).equalsIgnoreCase("alchemisth")){
-			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Alchemist-Heavy");
-			sign.setLine(1, (ChatColor.DARK_RED+"Alchemist"));
-			sign.setLine(2, (ChatColor.DARK_RED+"Heavy"));}
+		//castle	
+		//castle enforcer
+		if(sign.getLine(1).equalsIgnoreCase("enforcerlc")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Enforcer-Light");
+			sign.setLine(1, (ChatColor.BLUE+"Enforcer"));
+			sign.setLine(2, (ChatColor.BLUE+"Light"));}
+		if(sign.getLine(1).equalsIgnoreCase("enforcerhc")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Enforcer-Heavy");
+			sign.setLine(1, (ChatColor.BLUE+"Enforcer"));
+			sign.setLine(2, (ChatColor.BLUE+"Heavy"));}
+		
+		//castle ranger
+		if(sign.getLine(1).equalsIgnoreCase("rangerlc")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Ranger-Light");
+			sign.setLine(1, (ChatColor.BLUE+"Ranger"));
+			sign.setLine(2, (ChatColor.BLUE+"Light"));}
+		if(sign.getLine(1).equalsIgnoreCase("rangerhc")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Ranger-Heavy");
+			sign.setLine(1, (ChatColor.BLUE+"Ranger"));
+			sign.setLine(2, (ChatColor.BLUE+"Heavy"));}
+		
+		//castle chemist
+		if(sign.getLine(1).equalsIgnoreCase("chemistlc")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Chemist-Light");
+			sign.setLine(1, (ChatColor.BLUE+"Chemist"));
+			sign.setLine(2, (ChatColor.BLUE+"Light"));}
+		if(sign.getLine(1).equalsIgnoreCase("chemisthc")){
+			player.sendMessage(ChatColor.GREEN + "You made a pick class sign: Chemist-Heavy");
+			sign.setLine(1, (ChatColor.BLUE+"Chemist"));
+			sign.setLine(2, (ChatColor.BLUE+"Heavy"));}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		//sides
 		if(sign.getLine(1).equalsIgnoreCase("castle")){
